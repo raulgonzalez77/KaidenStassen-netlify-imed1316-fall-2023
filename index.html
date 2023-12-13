@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Stassen's Universal Views</title>
+
+  <!--Google Fonts CSS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet" />
+
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!--Google ICON CDN CSS-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <!--Font Awesome CDN CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--Fancy App CDN CSS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+  <!--AOS CSS CDN-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+  <!--Local CSS-->
+  <link rel="stylesheet" href="/css/styles.css" />
+
+  <!-- Bootstrap CDN CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+
+<body>
+  <!--Starry Background and Orbiting Planet-->
+  <div id='stars'></div>
+  <div id='stars2'></div>
+  <div id='stars3'></div>
+  <div id='stars-add'></div>
+  <div id="sun"></div>
+  <div id="mercury-orbit">
+    <div id="mercury"></div>
+  </div>
+  <header>
+
+   
+  
+    <!--Begin Google Icons-->
+    <div class="container text-center top-logo">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <span class="material-symbols-outlined">
+            <a href="https://mm3nt4.csb.app/">
+              home  
+              </a>
+              </span>
+         
+        </div>
+        <div class="col-12 col-md-6">
+          <span id="my-google-font">Shock and Awe</span>
+        </div>
+      </div>
+    </div>
+    <!--Google Icon Ends-->
+
+    <!--Top Nav Bar Begins-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid nav-back">
+        <!--<a class="navbar-brand" href="#">Navbar</a>-->
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="https://mm3nt4.csb.app/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://mm3nt4.csb.app/purpose.html">Check Out Our Purpose!</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                More?
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://mm3nt4.csb.app/eclipse.html">Eclipse Schedule</a></li>
+                <li><a class="dropdown-item" href="https://mm3nt4.csb.app/viewing.html">Best Locations To Astral Events</a></li>
+                <li><a class="dropdown-item" href="https://mm3nt4.csb.app/gallery.html">Want to See A dose of Space's Beauty?</a></li>
+                <li><a class="dropdown-item" href="https://mm3nt4.csb.app/art.html">What does art and space have in common?</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://mm3nt4.csb.app/form.html">Would you like to donate pictures or inform us of Astral Events?</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Top Nav Bar Stops-->
+  </header>
+
+  <main>
+    <!--Carousel Begins-->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img <img src="/images/carousel/C 1.jpg" class="d-block w-100" alt="A Red Nebula" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>The Universe Is A Work Of Art</h5>
+            <p>
+              Space Is Full of Interesting and Abstract Objects
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/images/carousel/C 2.jpg" class="d-block w-100" alt="Rainbow Space Dust" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Its Creation Is Completely Random</h5>
+            <p>
+              There are an Infinite Amount of Beautiful Sights to Behold In Space
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/images/carousel/C 3.jpg" class="d-block w-100" alt="A Red Nebula Shaped Like a Cloud" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Technology and Photographing</h5>
+            <p>
+              As Our Technology Evolves, We Can Bear Witness to Even More Universal Art
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--Carousel Ends-->
+
+    <!--Font Awesome Icons-->
+    <div class="container-fluid text-center fa-row">
+      <div class="row">
+        <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
+          <a href="https://mm3nt4.csb.app/gallery.html">
+            <i class="fa-solid fa-capsules fa-row-icon"></i>
+            <br />
+            <text class="row-icon-text">Dose Of Space</a><text>
+        </div>
+        <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
+          <a href="https://mm3nt4.csb.app/eclipse.html">
+            <i class="fa-solid fa-circle-half-stroke fa-row-icon"></i>
+            <br />
+            <text class="row-icon-text">Eclipses</a></text>
+        </div>
+        <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
+          <a href="https://mm3nt4.csb.app/viewing.html">
+            <i class="fa-solid fa-eye fa-row-icon"></i>
+            <br />
+            <text class="row-icon-text">Viewing Sights</a></text>
+        </div>
+        <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
+          <a href="https://mm3nt4.csb.app/form.html">
+            <i class="fa-solid fa-wand-magic-sparkles fa-row-icon"></i>
+            <br />
+            <text class="row-icon-text">Want To Help?</a></text>
+        </div>
+        <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
+          <a href="https://mm3nt4.csb.app/art.html">
+            <i class="fa-solid fa-splotch fa-row-icon"></i>
+            <br />
+            <text class="row-icon-text">Space and Art</a></text>
+        </div>
+        <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
+          <a href="https://mm3nt4.csb.app/purpose.html">
+            <i class="fa-solid fa-globe fa-row-icon"></i>
+            <br />
+            <text class="row-icon-text">Our Mission</a></text>
+        </div>
+      </div>
+    </div>
+
+    <!--Begin First Paragraph section-->
+    <div class="container first-paragraph-div">
+      <div class="row">
+        <div class="col-12">
+          <img src="/images/square/square-1.jpg" alt="Multi Colored Space Dust"
+            class="img-responsive first-paragraph-img" />
+          <h2>Unveiling the Cosmic Tapestry: Exploring the Mysteries of Space</h2>
+
+          <p>
+            Space, an endless expanse, captivates with its mysteries. Galaxies swirl, stars ignite, and planets dance in celestial choreography. In its silent depths, cosmic wonders unfold, inviting exploration and inspiring imagination. Its vastness humbles, reminding us of our place in the universe, beckoning us to unravel its enigmatic secrets.
+          </p>
+          <p>
+            Advancements in technology have become our beacon in deciphering the enigmatic realms of space. Cutting-edge telescopes, like the Hubble Space Telescope and the upcoming James Webb Space Telescope, unveil celestial marvels, peering deeper into the cosmos than ever before. These instruments capture cosmic light, revealing distant galaxies, planetary systems, and celestial phenomena, providing invaluable clues about the universe's origins and evolution.
+          </p>
+          <p>
+            Moreover, space exploration missions, such as those conducted by NASA, ESA, SpaceX, and other space agencies and private enterprises, carry humanity's aspirations beyond Earth's confines. Robotic probes land on distant planets and moons, like Mars and Europa, collecting data and clues about their atmospheres, surfaces, and potential for life. As technology advances and our understanding grows, collaborative efforts worldwide bring us closer to unlocking the mysteries that have captivated us for eons.
+          </p>
+         
+        </div>
+      </div>
+    </div>
+    <!--End First Paragraph Section-->
+
+    <!-- Slick Slider -->
+    <div class="container-fluid slider-container">
+      <div class="row">
+        <div class="col-12">
+          <div class="main-slider">
+            <div class="slider slider-for" data-slick='{"slidesToShow": 5, "slidesToScroll": 5}'>
+              <div class="cuadro">
+                <a href="/images/square-carousel/photos/1.jpg" data-fancybox="gallery" data-caption="Single image">
+                  <img src="/images/square-carousel/thumbs/1.jpg" class="img-fluid img-responsive" />
+                </a>
+              </div>
+              <div class="cuadro">
+                <a href="/images/square-carousel/photos/2.jpg" data-fancybox="gallery" data-caption="Single image">
+                  <img src="/images/square-carousel/thumbs/2.jpg" class="img-fluid img-responsive" />
+                </a>
+              </div>
+              <div class="cuadro">
+                <a href="/images/square-carousel/photos/3.jpg" data-fancybox="gallery" data-caption="Single image">
+                  <img src="/images/square-carousel/thumbs/3.jpg" class="img-fluid img-responsive" />
+                </a>
+              </div>
+              <div class="cuadro">
+                <a href="/images/square-carousel/photos/4.jpg" data-fancybox="gallery" data-caption="Single image">
+                  <img src="/images/square-carousel/thumbs/4.jpg" class="img-fluid img-responsive" />
+                </a>
+              </div>
+              <div class="cuadro">
+                <a href="/images/square-carousel/photos/5.jpg" data-fancybox="gallery" data-caption="Single image">
+                  <img src="/images/square-carousel/thumbs/5.jpg" class="img-fluid img-responsive" />
+                </a>
+              </div>
+              <div class="cuadro">
+                <a href="/images/square-carousel/photos/6.jpg" data-fancybox="gallery" data-caption="Single image">
+                  <img src="/images/square-carousel/thumbs/6.jpg" class="img-fluid img-responsive" />
+                </a>
+
+              </div>
+              <div class="cuadro">
+                <a href="/images/square-carousel/photos/7.jpg" data-fancybox="gallery" data-caption="Single image">
+                  <img src="/images/square-carousel/thumbs/7.jpg" class="img-fluid img-responsive" />
+                </a>
+              </div>
+              <div class="cuadro">
+                <a href="/images/square-carousel/photos/8.jpg" data-fancybox="gallery" data-caption="Single image">
+                  <img src="/images/square-carousel/thumbs/8.jpg" class="img-fluid img-responsive" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Slick Slider -->
+
+    <!--begin isotope and fancy app-->
+
+    <div class="container isotope-filter">
+      <h2 class="card-h2">
+        Quick Facts
+      </h2>
+      <!--Begin Filter Buttons-->
+      <div class="button-group filters-button-group">
+        <button class="button is-checked btn-isotope btn btn-success" data-filter="*">Show All
+
+        </button>
+        <button class="button is-checked btn-isotope btn btn-primary" data-filter=".galaxies">
+          Galaxies
+        </button>
+        <button class="button is-checked btn-isotope btn btn-primary" data-filter=".dust">
+          Space Dust
+        </button>
+        <button class="button is-checked btn-isotope btn btn-primary" data-filter=".stars">
+          Stars
+        </button>
+
+        <!--End Filter Buttons-->
+        <div class="row">
+          <!--Grid Begins-->
+          <div class="grid">
+
+
+            <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-ccl-4">
+              <!--Card-->
+              <div class="card element-item dust" style="width: 18rem;">
+                <a href="/images/card/space-dust-3.jpg" data-fancybox="gallery" data-caption="Single image">
+                  <img src="/images/card/space-dust-3.jpg" class="card-img-top" alt="Pink Space Dust" />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Space Dust</h5>
+                  <p class="card-text">Space dust consists of minute particles, including grains of silicates, carbon, ice, and other elements or compounds. These particles are spread throughout the cosmos, filling interstellar space and contributing to the composition of celestial bodies.</p>
+                    <div class="card-icons">
+                      <i class="fa-regular fa-share-from-square"></i>
+                      <i class="fa-regular fa-envelope"></i>
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-regular fa-thumbs-up"></i>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-ccl-4">
+              <!--Card-->
+           
+            </div>
+            <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-ccl-4">
+              <!--Card-->
+              <div class="card element-item dust" style="width: 18rem;">
+                <a href="/images/card/space-dust-2.jpg" data-fancybox="gallery" data-caption="Single image">
+                  <img src="/images/card/space-dust-2.jpg" class="card-img-top" alt="Orange and Blue Space Dust" />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Space Dust</h5>
+                  <p class="card-text">Space dust plays a crucial role in the formation of stars and planetary systems. These tiny particles act as building blocks, coming together through gravitational forces to form larger bodies like asteroids, comets, and even planets over vast periods of time.</p>
+                    <div class="card-icons">
+                      <i class="fa-regular fa-share-from-square"></i>
+                      <i class="fa-regular fa-envelope"></i>
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-regular fa-thumbs-up"></i>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-ccl-4">
+              <!--Card-->
+              <div class="card element-item dust" style="width: 18rem;">
+                <a href="/images/card/space-dust-1.jpg" data-fancybox="gallery" data-caption="Single image">
+                  <img src="/images/card/space-dust-1.jpg" class="card-img-top"
+                    alt="Flame-like Orange and Red Space Dust" />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Space Dust</h5>
+                  <p class="card-text">Space dust particles reflect and scatter light, leading to phenomena like cosmic rays, zodiacal light, and the visible reflection nebulae observed in space. Studying these particles aids in understanding the composition and dynamics of galaxies, star formation regions, and the evolution of the universe.</p>
+                    <div class="card-icons">
+                      <i class="fa-regular fa-share-from-square"></i>
+                      <i class="fa-regular fa-envelope"></i>
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-regular fa-thumbs-up"></i>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-ccl-4">
+              <!--Card-->
+              <div class="card element-item galaxies" style="width: 18rem;">
+                <a href="/images/card/galaxy-3.jpg" data-fancybox="gallery" data-caption="Single image">
+                  <img src="/images/card/galaxy-3.jpg" class="card-img-top" alt="White Starts Indicating a Galaxy" />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Galaxies</h5>
+                  <p class="card-text">Galaxies are immense systems comprising billions to trillions of stars, along with gas, dust, and dark matter, all bound together by gravity. They come in various shapes and sizes, from spiral and elliptical to irregular.</p>
+                    <div class="card-icons">
+                      <i class="fa-regular fa-share-from-square"></i>
+                      <i class="fa-regular fa-envelope"></i>
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-regular fa-thumbs-up"></i>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-ccl-4">
+              <!--Card-->
+              <div class="card element-item galaxies" style="width: 18rem;">
+                <a href="/images/card/galaxy-2.jpg" data-fancybox="gallery" data-caption="Single image">
+                  <img src="/images/card/galaxy-2.jpg" class="card-img-top" alt="White Stars Indicating a Galaxy" />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Galaxies</h5>
+                  <p class="card-text">Galaxies exhibit diverse structures, with spiral galaxies characterized by their spiral arms and flattened disks, while elliptical galaxies appear more spherical or elongated. Irregular galaxies lack a distinct shape and often result from interactions between galaxies.</p>
+                    <div class="card-icons">
+                      <i class="fa-regular fa-share-from-square"></i>
+                      <i class="fa-regular fa-envelope"></i>
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-regular fa-thumbs-up"></i>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-ccl-4">
+             
+            </div>
+            <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-ccl-4">
+              <!--Card-->
+              <div class="card element-item stars" style="width: 18rem;">
+                <a href="/images/card/star-2.jpg" data-fancybox="gallery" data-caption="Single image">
+                  <img src="/images/card/star-2.jpg" class="card-img-top" alt="An upclose picture of our sun" />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Stars</h5>
+                  <p class="card-text">Stars come in different colors due to their surface temperatures. Hotter stars appear blue or white, while cooler stars appear red. This color variation corresponds to their surface temperature and luminosity.</p>
+                    <div class="card-icons">
+                      <i class="fa-regular fa-share-from-square"></i>
+                      <i class="fa-regular fa-envelope"></i>
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-regular fa-thumbs-up"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card element-item stars" style="width: 18rem;">
+                <a href="/images/card/star-3.jpg" data-fancybox="gallery" data-caption="Single image">
+                  <img src="/images/card/star-3.jpg" class="card-img-top" alt="Purple and White Stars from far away" />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Stars</h5>
+                  <p class="card-text">Stars exhibit diverse lifecycles based on their mass. They can exist as main-sequence stars (like our Sun), progress into red giants or supergiants, and eventually undergo supernova explosions, leaving behind remnants such as neutron stars or black holes.</p>
+                    <div class="card-icons">
+                      <i class="fa-regular fa-share-from-square"></i>
+                      <i class="fa-regular fa-envelope"></i>
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-regular fa-thumbs-up"></i>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-ccl-4">
+              <!--Card-->
+              <div class="card element-item galaxies" style="width: 18rem;">
+                <a href="/images/card/galaxy-1.jpg" data-fancybox="gallery" data-caption="Single image">
+                  <img src="/images/card/galaxy-1.jpg" class="card-img-top" alt="A purple and blue galaxy" />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Galaxies</h5>
+                  <p class="card-text">Many galaxies harbor supermassive black holes at their centers, whose immense gravitational pull influences the motion and behavior of surrounding stars and matter. These black holes are crucial in shaping the evolution and dynamics of their host galaxies.</p>
+                    <div class="card-icons">
+                      <i class="fa-regular fa-share-from-square"></i>
+                      <i class="fa-regular fa-envelope"></i>
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-regular fa-thumbs-up"></i>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Grid Ends-->
+        </div>
+      </div>
+      <!--end isotope and fancy app-->
+
+      <!--Begin 2nd Paragraph-->
+      <div class="container first-paragraph-div">
+        <div class="row">
+          <div class="col-12">
+            <img src="/images/square/square-2.jpg" alt="A marron and blue nebula"
+              class="img-responsive second-paragraph-img">
+            <h2>Cosmic Canvases: Exploring the Artistry of Space</h2>
+            <p>
+              Space, akin to abstract art, presents a mesmerizing tableau of the inexplicable. Just as abstract art captivates through its diverse forms, textures, and interpretations, space enchants with its vastness, diverse celestial bodies, and intricate interplays of energy. Both evoke a sense of wonder and curiosity, inviting observers to explore the depths of imagination and interpretation. Like abstract art's elusive meanings, space's mysteries beckon us to contemplate the unknown, stirring emotions and sparking contemplation about our place in the cosmic masterpiece.
+            </p>
+            <p>
+              Nebulae and space dust, the cosmic architects of celestial beauty, emerge from the remnants of dying stars and the birthing grounds of new stellar entities. These stellar nurseries begin with the explosive demise of aging stars, scattering elements into the void. Gravity then coaxes these dispersed materials—gases, dust particles, and elements—to gather, forming vast clouds across space. Within these colossal conglomerates, gravity’s gentle embrace triggers a dance of compression, birthing new stars and planetary systems. 
+            </p>
+            <p>
+              Moreover, just as abstract art is a realm of boundless creativity, space serves as the ultimate stage for nature's artistic expression. Its breathtaking spectacles—the mesmerizing auroras, the stunning symmetry of spiral galaxies, and the graceful dance of planetary bodies—allude to an artistic prowess transcending human imagination. Each cosmic vista offers a glimpse into the boundless imagination of the universe, inviting contemplation and stirring the soul with its ethereal beauty.
+            </p>
+          
+          </div>
+        </div>
+      </div>
+
+      <!--End 2nd Paragraph-->
+      <hr />
+      <!--Begin headshot Section-->
+      <div class="container headshot text-center">
+        <div class="row">
+          <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+            <img src="/images/reviews/review-1.jpg" alt="Photographer standing on a dock" class="cropped"
+              data-aos="zoom-in">
+            <br />
+            <blockquote>
+              As a photographer immersed in the wonders of the cosmos, capturing the ethereal essence of nebulae and space dust is a testament to the unparalleled beauty of the universe.
+              <cite>
+                Paul Gonzalez
+              </cite>
+            </blockquote>
+          </div>
+          <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+            <img src="/images/reviews/review-2.jpg" alt="A telescope pointed at the night sky" class="cropped"
+              data-aos="zoom-in">
+
+            <br />
+            <blockquote>
+              Exploring the depths of space through the lens of a telescope is a journey of boundless fascination and discovery. Observing the birthplaces of stars and the remnants of stellar explosions, I'm transported to realms beyond imagination, experiencing the majesty of the universe firsthand.
+              <cite>
+                Stella Artoris
+              </cite>
+            </blockquote>
+          </div>
+          <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+            <img src="/images/reviews/review-3.jpg" alt="A man on a hill taking a photo" class="cropped"
+              data-aos="zoom-in">
+
+            <br />
+            <blockquote>
+              These celestial entities aren't just captivating spectacles; they're veritable archives of the universe's history. Each observation, each spectrum analyzed, unveils layers of cosmic evolution, revealing the story of star formation, interstellar dynamics, and the elemental origins of our cosmos.
+              <cite>
+                Dr. Alexander Hayes
+              </cite>
+            </blockquote>
+
+          </div>
+        </div>
+      </div>
+      <!--End headshot Section-->
+  </main>
+
+  <footer>
+    <!--Begin Footer-->
+<div class="container-fluid text-center footer-row">
+<div class="row">
+  <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
+    <a href="https://mm3nt4.csb.app/eclipse.html">When Is the Next Eclipse?</a>
+  </div>
+
+  <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
+    <a href="https://mm3nt4.csb.app/">Home</a>
+    </div>
+
+    <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
+      <a href="https://mm3nt4.csb.app/gallery.html">Gallery</a>
+      </div>
+
+      <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
+        <a href="https://mm3nt4.csb.app/viewing.html">Where To Catch The Best Views</a>
+        </div>
+
+
+        <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
+          <a href="https://mm3nt4.csb.app/purpose.html">Mission Statement</a> 
+          </div>
+
+          <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
+            <a href="https://mm3nt4.csb.app/form.html">Sumbit Pictures or Events</a> 
+            </div>
+</div>
+<hr />
+<div class="row">
+     
+        <div class="col-12">
+          <a href="https://www.facebook.com"> <i class="fa-brands fa-facebook fa-social-media"></i></a>
+          <a href="https://www.instagram.com"> <i class="fa-brands fa-instagram fa-social-media"></i></a>
+          <a href="https://www.twitter.com"> <i class="fa-brands fa-twitter fa-social-media"></i></a>
+          <a href="https://www.youtube.com"><i class="fa-brands fa-youtube fa-social-media"></i></a>
+          <a href="https://www.tiktok.com"> <i class="fa-brands fa-tiktok fa-social-media"></i></a>
+        </div>      
+  </div>
+
+</div>
+    <!--End Footer-->
+  </footer>
+
+  <!-- Begin JS Section -->
+  <section>
+    <!-- JQuery CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+      integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    >
+    </script>
+
+    <!-- Bootstrap JS CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Fancy App CDN JS-->
+    <script 
+    src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js">
+    </script>
+
+    <!--AOS CDN JS-->
+    <script 
+    src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    </script>
+    <script>
+      AOS.init();
+    </script>
+
+<!--Iostope JS CDN-->
+<script 
+src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js">
+</script>
+
+<!-- Slick Slider-->
+<script 
+type="text/javascript" 
+src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+>
+</script>
+
+    <!-- Local JavaScript -->
+    <script 
+    src="/js/scripts.js">
+    </script>
+
+    <!-- End JS Section -->
+  </section>
+
+</body>
+
+</html>

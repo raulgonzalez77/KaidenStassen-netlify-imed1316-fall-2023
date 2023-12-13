@@ -1,0 +1,13 @@
+@import "global.css";
+@import "main.css";
+
+#imed1316-gallery {
+  margin: auto;
+  width: 75%;
+  padding: 10px;
+  background-color: rgb(36, 36, 36) !important;
+}
+
+body {
+  background-color: #000000 !important;
+}

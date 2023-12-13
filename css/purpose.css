@@ -1,0 +1,21 @@
+@import "global.css";
+@import "main.css";
+
+h1 {
+  text-align: center;
+  color: var(--dominantColor) !important;
+}
+
+p {
+  text-align: center;
+  color: var(--secondaryColor) !important;
+  font-size: 20px;
+}
+
+.mission {
+  background-color: #101013;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 15%;
+  margin-right: 15%;
+}

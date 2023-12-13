@@ -1,0 +1,28 @@
+@import "global.css";
+@import "main.css";
+
+.view-list {
+  text-align: center;
+  padding-left: 15%;
+  padding-right: 15%;
+  font-size: 20px;
+  color: var(--accentColor) !important;
+}
+
+ul {
+  list-style-position: inside;
+  text-align: center;
+}
+
+h1 {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+h5 {
+  color: var(--dominantColor) !important;
+}
+
+h6 {
+  padding-bottom: 15px;
+}

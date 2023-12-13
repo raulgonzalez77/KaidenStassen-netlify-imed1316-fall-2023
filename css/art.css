@@ -1,0 +1,26 @@
+@import "global.css";
+@import "main.css";
+
+#imed1316-gallery {
+  margin: auto;
+  width: 75%;
+  padding: 10px;
+  background-color: rgb(36, 36, 36) !important;
+  margin-bottom: 5%;
+  margin-top: 2%;
+}
+
+body {
+  background-color: #000000 !important;
+}
+
+h2,
+h5 {
+  text-align: center;
+  padding-top: 10px;
+  padding bottom: 5px;
+}
+
+h5 {
+  color: var(--dominantColor) !important;
+}
